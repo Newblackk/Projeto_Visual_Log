@@ -1,0 +1,37 @@
+Algoritmo "Tipos de Operações Logicas Negação 2"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 09/03/2023
+Var
+// Seção de Declarações das variáveis
+// operação logica ela só pode ser verdadeiro ou falso, portanto ela já começa como falso
+   nota1, nota2, media: real
+   nome: caractere
+   passou: logico
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+
+   passou :=falso
+   escreval("digite o nome do aluno: ")
+   leia (nome)
+   escreval("Digite a nota1 do aluno: ")
+   leia (nota1)
+   escreval("Digite a nota2 do aluno: ")
+   leia (nota2)
+   media := (nota1 + nota2) / 2
+
+   se media >= 50 entao
+   passou := verdadeiro
+   fimse
+
+
+// A eclamação ( ! ) significa negação também, lendo como (se diferente de passou)
+   se !passou entao
+   escreval("Reprovado!", nome)
+   senao
+   escreval("Aprovado!", nome)
+   fimse
+
+Fimalgoritmo
